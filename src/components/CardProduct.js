@@ -32,15 +32,13 @@ CardProduct.propTypes={
   price : PropTypes.number,
   image : PropTypes.string,
   addToCart : PropTypes.func,
-  increase : PropTypes.func,
-  decrease : PropTypes.func,
+  
 }
 CardProduct.defaultProps={
   name : "",
   price : "",
   image : "",
   addToCart: () => null,
-  increase : () => console.log(""),
-  decrease : () => console.log(""),
+  
 }
 export default CardProduct;
