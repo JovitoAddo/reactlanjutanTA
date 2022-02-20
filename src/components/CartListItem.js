@@ -21,4 +21,21 @@ const CartListItem = ({ name, price, amount, increase, decrease }) => {
   );
 };
 
+CartListItem.propTypes={
+  name : PropTypes.string,
+  price : PropTypes.number,
+  image : PropTypes.string,
+  addToCart : PropTypes.func,
+  increase : PropTypes.func,
+  decrease : PropTypes.func,
+}
+CartListItem.defaultProps={
+  name : "",
+  price : "",
+  image : "",
+  addToCart: () => null,
+  increase : () => console.log(""),
+  decrease : () => console.log(""),
+}
+
 export default CartListItem;
